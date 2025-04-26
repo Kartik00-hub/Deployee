@@ -3,6 +3,7 @@ import axios from "axios";
 
 import ProjectCarousel from "../components/ProjectCarousel.jsx";
 import Projectlogs from "../components/Projectlogs.jsx";
+import Deployeeneed from "../components/deployeeneed.jsx";
 
 const Home = () => {
   const [repo, setRepo] = useState("");
@@ -126,6 +127,9 @@ const Home = () => {
       </section>
       <section>
         <Projectlogs />
+      </section>
+      <section>
+        <Deployeeneed />
       </section>
 
       <footer className="bg-gray-100 text-center py-4">

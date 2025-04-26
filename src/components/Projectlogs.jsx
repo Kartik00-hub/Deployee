@@ -22,24 +22,24 @@ export default function Projectlogs() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6">
-      <h1 className="text-3xl font-bold text-center mb-12 text-blue-600">
-        How Deployee Works
-      </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <section className="py-16 px-6 bg-gray-50">
+      <h2 className="text-3xl font-bold text-center mb-10 text-blue-600">
+        How It Works
+      </h2>
+      <div className="flex flex-wrap justify-center gap-8">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-all duration-300"
+            className="w-64 bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-all duration-300"
           >
-            <h2 className="text-xl font-bold mb-4 text-blue-500">
-              {step.title}
-            </h2>
-            <p className="text-gray-600">{step.description}</p>
+            <div className="text-blue-600 text-4xl font-bold mb-2">
+              {index + 1}
+            </div>
+            <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+            <p className="text-gray-500 text-sm">{step.description}</p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
