@@ -4,6 +4,7 @@ import axios from "axios";
 import ProjectCarousel from "../components/ProjectCarousel.jsx";
 import Projectlogs from "../components/Projectlogs.jsx";
 import Deployeeneed from "../components/deployeeneed.jsx";
+import Faq from "../components/faqs.jsx";
 
 const Home = () => {
   const [repo, setRepo] = useState("");
@@ -130,6 +131,9 @@ const Home = () => {
       </section>
       <section>
         <Deployeeneed />
+      </section>
+      <section>
+        <Faq />
       </section>
 
       <footer className="bg-gray-100 text-center py-4">
